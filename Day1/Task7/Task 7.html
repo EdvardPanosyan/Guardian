@@ -1,0 +1,27 @@
+<!Doctype html>
+<html>
+<head>
+  <title>Task 7</title>
+</head>
+<body>
+
+<p id="paragraph">Hello!!!</p>
+<button onclick="toggleVisibility()">Hide</button>
+
+<script>
+function toggleVisibility() {
+  var paragraph = document.getElementById("paragraph");
+  var button = document.querySelector("button");
+
+  if (paragraph.style.display === "none") {
+    paragraph.style.display = "block";
+    button.textContent = "Hide";
+  } else {
+    paragraph.style.display = "none";
+    button.textContent = "Show";
+  }
+}
+</script>
+
+</body>
+</html>

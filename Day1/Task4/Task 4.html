@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Task 4</title>
+</head>
+<body>
+
+<button id="helloButton" onclick="toggleText()">Hello</button>
+
+<script>
+function toggleText() {
+  var button = document.getElementById("helloButton");
+  if (button.innerHTML === "Hello") {
+    button.innerHTML = "Goodbye";
+  } else {
+    button.innerHTML = "Hello";
+  }
+}
+</script>
+
+</body>
+</html>
